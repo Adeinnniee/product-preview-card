@@ -13,6 +13,7 @@ body{
 }
 
 .card{
+    margin-top: 6rem;
     flex-direction: row;
     width: 78%;
     max-width: 480px;
@@ -76,7 +77,7 @@ button:hover{
 /*                         MEDIA QUERIES                                      */
 @media (max-width:600px){
     /* styling the body and the card */
-    .card{  
+    .card{
         flex-direction: column;  
     }
 
