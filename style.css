@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* styling the body and the card */
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card{
+    flex-direction: row;
+    width: 78%;
+    max-width: 480px;
+    /* to explain width and max-width as used here in my terms - the amount of width is the width given to small screen devices while the amount of max-width is the width given to large(r) screens. 90% width will be effective if the device is lower than 490px. */
+    border-radius: 0.5rem;
+}
+
+/* styling the images */
+.img1{
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.img2{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+/* styling the card contents */
+.card-title, .card-text, .former-price{
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+.card-text, .card-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.card-title{
+    letter-spacing: 0.3rem;
+}
+
+.card-subtitle{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+.present-price{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+/* styling the button */
+button{
+    background-color: hsl(158, 36%, 37%);
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+    border: 0rem solid;
+    border-radius: 0.5rem;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: hsl(158, 67%, 19%);
+}
+
+
+
+/*                         MEDIA QUERIES                                      */
+@media (max-width:600px){
+    /* styling the body and the card */
+    .card{  
+        flex-direction: column;  
+    }
+
+    /* styling the card contents */
+    .card-subtitle, .present-price{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 330px){
+    /* styling the button */
+    button{
+        padding: 0rem 3.5em;
+    }
+}
+
+@media(min-width: 330px) and (max-width: 380px){
+    /* styling the button */
+    button{
+        padding: 0rem 4.5em;
+    }
+}
+
+@media(min-width:380px) and (max-width: 600px){
+    /* styling the button */
+    button{
+        padding: 0rem 5.5em;
+    }
+}
